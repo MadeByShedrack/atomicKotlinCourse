@@ -83,6 +83,8 @@ fun main() {
     for (car in cars){
         println("Cars: ${car.key} - Price: $${car.value}")
     }
+
+    println(cars.containsKey("Chevrolet Tahoe"))
 }
 
 fun readOnlySets(readOnlySets: Set<String>) : Unit {
