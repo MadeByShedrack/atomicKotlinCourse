@@ -5,6 +5,10 @@ fun main() {
     hello()
     val result = sum(120, 45)
     println("The result is $result")
+    printMessageWithPrefix(prefix = "Log", message = "Hello")
+    printMessageWithPrefix("Hello", "Log")
+    printMessageWithPrefix("Welcome To Teranova")
+    printMessage("Hello world new user")
 }
 
 fun hello() {
@@ -14,4 +18,12 @@ fun hello() {
 fun sum(x: Int, y: Int): Int {
     val addNumbers = x + y
     return addNumbers
+}
+
+fun printMessageWithPrefix(message: String, prefix: String = "Info") {
+    println("[$prefix] $message")
+}
+
+fun printMessage(message: String) {
+    println("Message -> $message")
 }
